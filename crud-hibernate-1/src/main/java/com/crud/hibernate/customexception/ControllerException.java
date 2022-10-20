@@ -39,4 +39,10 @@ public class ControllerException extends RuntimeException{
 	public void setErrorMessgae(String errorMessgae) {
 		this.errorMessgae = errorMessgae;
 	}
+
+	@Override
+	public String toString() {
+		return "ControllerException [errorCode=" + errorCode + ", errorMessgae=" + errorMessgae + "]";
+	}
+	
 }

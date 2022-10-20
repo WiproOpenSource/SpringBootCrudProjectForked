@@ -39,4 +39,10 @@ public class BusinessException extends RuntimeException {
 	public void setErrorMessgae(String errorMessgae) {
 		this.errorMessgae = errorMessgae;
 	}
+
+	@Override
+	public String toString() {
+		return "BusinessException [errorCode=" + errorCode + ", errorMessgae=" + errorMessgae + "]";
+	}
+	
 }
